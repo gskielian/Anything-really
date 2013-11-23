@@ -1,0 +1,42 @@
+<!doctype html>
+<html ng-app="myapp">
+  <head>
+
+    <meta charset="utf-8">
+
+    <!-- adds angular js-->
+    <script src="./angular.min.js">  </script>
+    <script src="http://code.angularjs.org/1.0.3/angular-resource.min.js"></script>
+    <!-- adds firebase -->
+    <script type='text/javascript' src='firebase.js'></script>
+
+    <!-- adds angularfire bindings-->
+    <script src="angularfire.min.js"></script>
+  <script src="robot.js"></script>
+  <style>
+  body
+  {
+  background-image:url('mudkip.jpeg')
+  }
+  </style>
+  </head>
+
+<body ng-controller="MyController">
+  <h1> 
+     Moar buttons!
+   </h1>
+  <input style="width:100%; margin:10px; padding:50px;" type="button" value="Click Here To Go Forward" ng-click="sendCommand('forward')">
+  <br>
+  <input style="width:100%; margin:10px; padding:50px;" type="button" value="Click Here To Go Backwards" ng-click="sendCommand('backward')">
+  <br>
+  <input style="width:100%; margin:10px; padding:50px;" type="button" value="Click Here To Go Left" ng-click="sendCommand('left')">
+  <br>
+  <input style="width:100%; margin:10px; padding:50px;" type="button" value="Click Here To Go Right" ng-click="sendCommand('right')">
+  <br>
+  <input style="width:100%; margin:10px; padding:50px;" type="button" value="Click Here To Stop" ng-click="sendCommand('stop')">
+
+
+  
+</body>
+
+</html>
